@@ -5,8 +5,7 @@
 (define-foreign-library libssl
   (t (:or "libssl.so" "libssl.so.3")))
 (use-foreign-library libssl)
-(load-foreign-library "/home/mrcode/ssl-dev/ssl/lib/libcrypto.so.3")
-(load-foreign-library "/home/mrcode/ssl-dev/ssl/lib/libssl.so.3")
+(load-foreign-library 'libssl)
 
 (define-foreign-library libcrypto
   (t (:or "libcrypto.so")))
